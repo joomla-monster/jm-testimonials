@@ -1,0 +1,150 @@
+
+.jmm-testimonials.default {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.jmm-testimonials.default.indicators {
+	padding-bottom: 40px;
+}
+
+.jmm-testimonials.default .jmm-image {
+	margin: 0 0 30px;
+}
+
+.jmm-testimonials.default .jmm-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 100%;
+}
+
+.jmm-testimonials.default .jmm-comment {
+	margin: 0 0 30px;
+	line-height: 1.7;
+}
+
+.jmm-testimonials.default .jmm-author {
+	margin: 0 0 5px;
+	position: relative;
+	color: #444;
+}
+
+.jmm-testimonials.default .jmm-author:before {
+	content: '~';
+}
+
+.jmm-testimonials.default .carousel-indicators {
+	top: auto;
+	right: auto;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+
+.jmm-testimonials.default .carousel-indicators li {
+	margin: 0 3px;
+	width: 7px;
+	height: 7px;
+	border: 1px solid #444;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.jmm-testimonials.default .carousel-indicators li:hover,
+.jmm-testimonials.default .carousel-indicators .active {
+	background-color: #222;
+}
+
+.jmm-testimonials .sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+.jmm-testimonials.default .jmm-row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.jmm-testimonials.default .jmm-rows {
+	margin: -15px;
+	width: auto;
+}
+
+.jmm-testimonials.default .jmm-rows > div > .jmm-item {
+	float: left;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.jmm-testimonials.default .jmm-rows [role="tabpanel"]:focus {
+	outline-offset: -2px;
+}
+
+html[dir='rtl'] .jmm-testimonials.default .jmm-rows > div > .jmm-item {
+	float: right;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-1 > div > .jmm-item {
+	width: 100%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-2 > div > .jmm-item {
+	width: 50%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-3 > div > .jmm-item {
+	width: 33.33%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-4 > div > .jmm-item {
+	width: 25%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-5 > div > .jmm-item {
+	width: 20%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-6 > div > .jmm-item {
+	width: 16.66%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-7 > div > .jmm-item {
+	width: 14.28%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-8 > div > .jmm-item {
+	width: 12.5%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-9 > div > .jmm-item {
+	width: 11.11%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-10 > div > .jmm-item {
+	width: 10%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-11 > div > .jmm-item {
+	width: 9.09%;
+}
+
+.jmm-testimonials.default .jmm-rows.rows-12 > div > .jmm-item {
+	width: 8.33%;
+}
+
+@media (max-width: 767px) {
+	.jmm-testimonials.default .jmm-rows[class*='rows-'] > div > .jmm-item {
+		width: 100%;
+	}
+}

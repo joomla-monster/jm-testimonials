@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="upgrade">
+	<name>MOD_JM_TESTIMONIALS</name>
+	<creationDate>11/09/2020</creationDate>
+	<author>Joomla-Monster.com</author>
+	<copyright>Copyright (C) 2020 Joomla-Monster.com, All rights reserved.</copyright>
+	<license> http://www.gnu.org/licenses GNU/GPL</license>
+	<authorEmail>artur.kaczmarek@joomla-monster.com</authorEmail>
+	<authorUrl>https://joomla-monster.com</authorUrl>
+	<version>1.08</version>
+	<description>MOD_JM_TESTIMONIALS_DESC</description>
+	<files>
+			<filename module="mod_jm_testimonials">mod_jm_testimonials.php</filename>
+			<filename>index.html</filename>
+			<folder>assets</folder>
+			<folder>tmpl</folder>
+			<folder>language</folder>
+			<folder>fields</folder>
+	</files>
+
+	<updateservers>
+		<server type="extension" priority="1" name="MOD_JM_TESTIMONIALS">https://joomla-monster.com/updates/mod_jm_testimonials.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_jm_testimonials/fields">
+
+			<fieldset name="basic">
+				<field name="testimonials" type="jmelements" label="MOD_JM_TESTIMONIALS_FIELD_ITEMS" description="MOD_JM_TESTIMONIALS_FIELD_ITEMS_DESC" element_name="MOD_JM_TESTIMONIALS_FIELD_ITEM" element_fields="image,author,profession,text" element_field="author" filter="raw" />
+
+					<field name="image" type="media" directory="" label="MOD_JM_TESTIMONIALS_FIELD_IMAGE" />
+
+					<field name="author" type="text" default="" label="MOD_JM_TESTIMONIALS_FIELD_AUTHOR" description="MOD_JM_TESTIMONIALS_FIELD_AUTHOR_DESC" />
+					<field name="profession" type="text" default="" label="MOD_JM_TESTIMONIALS_FIELD_PROFESSION" description="MOD_JM_TESTIMONIALS_FIELD_PROFESSION_DESC" />
+
+					<field name="text" type="textarea" default="" label="MOD_JM_TESTIMONIALS_FIELD_TEXT" description="MOD_JM_TESTIMONIALS_FIELD_TEXT_DESC" />
+
+					<field type="spacer" />
+					
+				<field name="columns" type="list" default="1" label="MOD_JM_TESTIMONIALS_FIELD_COLUMNS" description="MOD_JM_TESTIMONIALS_FIELD_COLUMNS_DESC">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+
+				<field name="show_indicators" type="radio" class="btn-group" default="0" label="MOD_JM_TESTIMONIALS_FIELD_SHOW_INDICATORS" description="MOD_JM_TESTIMONIALS_FIELD_SHOW_INDICATORS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="auto_play" type="radio" class="btn-group" default="0" label="MOD_JM_TESTIMONIALS_FIELD_AUTO_PLAY" description="MOD_JM_TESTIMONIALS_FIELD_AUTO_PLAY_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="play_interval" type="number" default="5000" label="MOD_JM_TESTIMONIALS_FIELD_ANIMATION_INTERVAL" description="MOD_JM_TESTIMONIALS_FIELD_ANIMATION_INTERVAL_DESC" min="0" max="5000" step="1" />
+
+				<field name="theme" type="list" default="1" label="MOD_JM_TESTIMONIALS_FIELD_THEME" description="MOD_JM_TESTIMONIALS_FIELD_THEME_DESC">
+					<option value="1">MOD_JM_TESTIMONIALS_FIELD_THEME_DEFAULT</option>
+					<option value="2">MOD_JM_TESTIMONIALS_FIELD_THEME_OVERRIDE</option>
+				</field>
+
+				<field type="note" name="theme_note" class="alert alert-info" label="MOD_JM_TESTIMONIALS_FIELD_THEME_NOTE" description="MOD_JM_TESTIMONIALS_FIELD_THEME_NOTE_DESC" showon="theme:2" />
+
+			</fieldset>
+
+			<fieldset name="advanced">
+
+				<field name="bootstrap_js" type="radio" class="btn-group" default="1" label="MOD_JM_TESTIMONIALS_FIELD_BOOTSTRAP_JS" description="MOD_JM_TESTIMONIALS_FIELD_BOOTSTRAP_JS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="bootstrap_css" type="radio" class="btn-group" default="0" label="MOD_JM_TESTIMONIALS_FIELD_BOOTSTRAP_CSS" description="MOD_JM_TESTIMONIALS_FIELD_BOOTSTRAP_CSS_DESC">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+					rows="3"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

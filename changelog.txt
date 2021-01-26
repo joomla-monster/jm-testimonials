@@ -1,0 +1,5 @@
+
+1.08
+(!) Improved keyboard navigation according WCAG rules
+(!) Comment field is not required any more, the module will display items if any of the fields was set up.
+(!) Minor fixes and improvements in CSS styles to correct display indicators on some bootstrap versions
